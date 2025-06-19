@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная страница</title>
+	{% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+	<div class="main-wrapper-outer">
+		{% include 'blocks/header.njk' %}
+		<main class="main">
+			<div class="block-intro">
+				<img src="img/bg1.webp" alt="" class="block-intro__bg">
+				<div class="container">
+					<div class="block-intro__content">
+						<img src="img/image2.webp" alt="" class="block-intro__image">
+						<div class="block-intro__body">
+							<div class="block-intro__title">ВЕБИНАР</div>
+							<div class="block-intro__data">26 июня 20:00 мск</div>
+							<h1 class="title1">
+								Заговорите на турецком
+								за 1 час — без зубрёжки
+								и скучных правил
+							</h1>
+							<a href="#" class="btn">Забронировать место</a>
+						</div>
+						<div class="block-intro__bottom">
+							<div class="block-intro__left">
+								<p>
+									После регистрации пришлем
+									вам в подарок гайд
+									"Турецкие рецепты"
+								</p>
+								<img src="img/image1.webp" alt="" class="block-intro__present">
+							</div>
+							<div class="block-intro__name">
+								Ведущий:
+								<br>
+								Гёктюрк Чалышкан
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="block-result">
+				<div class="container">
+					<div class="block-result__content">
+						<a href="#" class="btn">Забронировать место</a>
+						<h2 class="title2"><span>Результат</span>, который вы получите <span>после вебинара</span>:</h2>
+						<div class="block-result__body">
+							<div class="block-result__column">
+								<img src="img/image3.webp" alt="">
+								<p>
+									Погрузитесь в речь и мышление турков —
+									через реальные фразы и примеры
+								</p>
+							</div>
+							<div class="block-result__column">
+								<img src="img/image3.webp" alt="">
+								<p>
+									Узнаете, какие ошибки мешают
+									заговорить, и как от них избавиться
+								</p>
+							</div>
+							<div class="block-result__column">
+								<img src="img/image3.webp" alt="">
+								<p>
+									Освоите 2 главных правила,
+									без которых турецкий кажется “бессвязным”
+								</p>
+							</div>
+							<div class="block-result__column">
+								<img src="img/image3.webp" alt="">
+								<p>
+									Разберёте 5 фраз, чтобы думать по-турецки,
+									а не переводить слова в уме
+								</p>
+							</div>
+							<div class="block-result__column">
+								<img src="img/image3.webp" alt="">
+								<p>
+									Поймёте, как говорить уверенно,
+									даже если слов пока мало
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="block-speaker">
+				<div class="container">
+					<div class="block-speaker__content">
+						<h2 class="title2">Спикер вебинара - <span>носитель языка</span></h2>
+						<div class="block-speaker__body">
+							<div class="block-speaker__left">
+								<div class="block-speaker__title">Гёктюрк Чалышкан</div>
+								<ul>
+									<li>
+										Это преподаватель, которого слушают даже те, кто никогда не учил языки.
+									</li>
+									<li>
+										10+ лет помогает студентам заговорить на турецком легко и с удовольствием.
+									</li>
+									<li>
+										Погружает в язык без скучной грамматики.
+									</li>
+									<li class="fz">
+										Ведущий YouTube-канала «Диалог» — его уроки смотрят более 1 миллиона человек.
+									</li>
+								</ul>
+							</div>
+							<div class="block-speaker__image">
+								<div class="block-speaker__name">Гёктюрк Чалышкан</div>
+								<img src="img/image4.webp" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="block-registration">
+				<div class="container">
+					<div class="block-registration__content">
+						<h2 class="title2">
+							Регистрируйтесь на вебинар
+							и <span>получите подарок</span> "Турецкие рецепты"
+						</h2>
+						<div class="block-registration__top">
+							<img src="img/image1.webp" alt="">
+							<p>
+								Получите в подарок оригинальные рецепты
+								настоящих турецких блюд.
+								<br>
+								Кофе по-турецки, халва, плов и не только!
+								<br>
+								Удивите своих близких 😉
+							</p>
+						</div>
+						<form action="#" class="block-registration__form">
+							<div class="block-registration__inputs">
+								<div class="block-registration__input">
+									<input data-required autocomplete="off" type="text" name="form[]"
+										data-error="Обязательное поле" placeholder="Имя">
+								</div>
+								<div class="block-registration__input">
+									<input data-required data-type="phone" autocomplete="off" type="text" name="form[]"
+										data-error="Обязательное поле" placeholder="Телефон">
+								</div>
+								<div class="block-registration__input">
+									<input data-required data-typy="email" autocomplete="off" type="text" name="form[]"
+										data-error="Обязательное поле" placeholder="Email">
+								</div>
+							</div>
+							<button type="submit" class="btn">иду на вебинар</button>
+							<div class="block-registration__bottom">
+								<img class="block-registration__union union1" src="img/union.svg" alt="">
+								<img class="block-registration__union union2" src="img/union2.svg" alt="">
+								<img class="block-registration__image" src="img/image5.webp" alt="">
+								<p>
+									Осталось
+									всего
+									<span>6 мест</span>
+								</p>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		{% include 'blocks/footer.njk' %}
+	</div>
+	{% include 'blocks/scripts.njk' %}
+</body>
+
+</html>
